@@ -96,9 +96,9 @@ nav a {
   font-weight: bold;
   transition: color 0.2s;
 }
+
 nav a:hover {
   color: #4f8cff;
-}
 }
 
 @keyframes App-logo-spin {
