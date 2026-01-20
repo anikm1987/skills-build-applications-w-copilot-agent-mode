@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  color: #22223b;
+}
+
+.App-logo {
+  height: 60px;
+  margin-right: 20px;
+  float: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: linear-gradient(90deg, #4f8cff 0%, #6ee7b7 100%);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(12px + 2vmin);
+  color: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.1);
+}
+
+.App-link {
+  color: #4f8cff;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.App-link:hover {
+  color: #6ee7b7;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: #e0e7ff;
+  color: #22223b;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+}
+th, td {
+  border: 1px solid #4f8cff;
+  padding: 12px;
+}
+th {
+  background: #4f8cff;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+button, .btn {
+  background: #6ee7b7;
+  color: #22223b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+button:hover, .btn:hover {
+  background: #4f8cff;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4f8cff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+nav {
+  background: #22223b;
+  color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+nav a {
+  color: #6ee7b7;
+  margin-right: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #4f8cff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
