@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+import os
 
 # Application definition
 
@@ -42,6 +43,10 @@ INSTALLED_APPS = [
     'djongo',
     'corsheaders',
 ]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+CODESPACE_NAME = os.environ.get('CODESPACE_NAME', '')
+if CODESPACE_NAME:
+    ALLOWED_HOSTS.append(f'{CODESPACE_NAME}-8000.app.github.dev')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
